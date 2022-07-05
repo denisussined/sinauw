@@ -1,9 +1,10 @@
 .wrapper
-  padding: 20px 0
+  max-width: 1200px
+  padding: 20px
 
   display: grid
   grid-template-areas: 'logo navbar . language login'
-  grid-template-columns: auto auto minmax(0, 1fr) auto auto
+  grid-template-columns: auto minmax(580px, 970px) 1fr auto auto
 
 .logo
   grid-area: logo
@@ -15,7 +16,7 @@
   color: #FFFFFF
 
   display: flex
-  justify-content: center
+  justify-content: start
 
   span
     padding: 15px 20px
@@ -60,6 +61,7 @@
 
   .navbar
     padding: 20px 0 0
+    justify-content: center
 
     span
       padding: 15px
