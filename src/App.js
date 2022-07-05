@@ -1,8 +1,8 @@
-import './App.css';
+import app from './App.module.sass';
 
 const App = () => {
   return (
-      <div>
+      <div className={app.wrapper}>
         app
       </div>
   )
