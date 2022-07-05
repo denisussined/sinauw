@@ -1,3 +1,10 @@
 body {
   margin: 0;
 }
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+  url("./fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
