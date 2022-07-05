@@ -10,17 +10,15 @@ const Header = () => {
                 <img src={logo} alt="logo"/>
             </div>
 
-            <div className={header.options}>
-                <nav className={header.navbar}>
-                    <span>Home</span>
-                    <span>Courses</span>
-                    <span>Webinar</span>
-                    <span>Pricing</span>
-                </nav>
+            <nav className={header.navbar}>
+                <span>Home</span>
+                <span>Courses</span>
+                <span>Webinar</span>
+                <span>Pricing</span>
+            </nav>
 
-                <div className={header.language}>
-                    <img src={lang} alt="language"/>
-                </div>
+            <div className={header.language}>
+                <img src={lang} alt="language"/>
             </div>
 
             <div className={header.login}>

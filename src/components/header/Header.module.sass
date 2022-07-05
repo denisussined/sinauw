@@ -1,35 +1,43 @@
 .wrapper
-  padding: 19px 0
+  padding: 20px 0
 
   display: grid
-  grid-template-areas: '. logo options login .'
-  grid-template-columns: minmax(30px, 1fr) 82px minmax(auto, 964px) 102px minmax(30px, 1fr)
+  grid-template-areas: 'logo navbar . language login'
+  grid-template-columns: auto auto minmax(0, 1fr) auto auto
 
 .logo
   grid-area: logo
 
-.options
-  grid-area: options
+.navbar
+  grid-area: navbar
+  margin: auto 0
+  padding: 0 100px
+  color: #FFFFFF
 
   display: flex
-  justify-content: space-around
-  align-items: center
+  justify-content: center
 
-  .navbar
-    padding: 0 100px
-    color: #FFFFFF
+  span
+    padding: 15px 20px
 
-    display: flex
-    gap: 40px
+.language
+  grid-area: language
+  margin: auto 0
+  padding-right: 20px
 
-  .language
-    justify-self: end
-    padding: 0 20px
+  display: grid
+  img
+    margin: auto
+
+    &:hover
+      cursor: pointer
 
 .login
   grid-area: login
+  display: grid
 
   button
+    margin: auto
     padding: 0
     border: 0
     width: 102px
@@ -44,3 +52,27 @@
 
     &:hover
       cursor: pointer
+
+@media (max-width: 900px)
+  .wrapper
+    grid-template-areas: 'logo . language login' 'navbar navbar navbar navbar'
+    grid-template-columns: auto minmax(60px, 2fr) auto auto
+
+  .navbar
+    padding: 20px 0 0
+
+    span
+      padding: 15px
+
+@media (max-width: 570px)
+  .wrapper
+    font-size: 14px
+
+  .navbar
+    span
+      padding: 10px
+
+  .login
+    button
+      width: 72px
+      height: 35px
