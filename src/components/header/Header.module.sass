@@ -1,0 +1,46 @@
+.wrapper
+  padding: 19px 0
+
+  display: grid
+  grid-template-areas: '. logo options login .'
+  grid-template-columns: minmax(30px, 1fr) 82px minmax(auto, 964px) 102px minmax(30px, 1fr)
+
+.logo
+  grid-area: logo
+
+.options
+  grid-area: options
+
+  display: flex
+  justify-content: space-around
+  align-items: center
+
+  .navbar
+    padding: 0 100px
+    color: #FFFFFF
+
+    display: flex
+    gap: 40px
+
+  .language
+    justify-self: end
+    padding: 0 20px
+
+.login
+  grid-area: login
+
+  button
+    padding: 0
+    border: 0
+    width: 102px
+    height: 41px
+
+    background: #F5443B
+    color: #FFFFFF
+    border-radius: 6px
+    font-style: normal
+    font-weight: 700
+    font-size: 14px
+
+    &:hover
+      cursor: pointer
