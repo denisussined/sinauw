@@ -2,13 +2,13 @@
   padding: 0 20px 20px
   color: white
   display: flex
+  justify-content: end
 
 .student
   margin-left: calc(0px - (100vw - 100%) / 2)
 
 .info
   flex: 0 1 505px
-  margin: 0 auto
   display: flex
   flex-direction: column
 
@@ -26,7 +26,7 @@
   position: relative
 
 .input__area
-  padding: 0 0 0 32px
+  padding-left: 32px
   width: calc(100% - 35px)
   height: 64px
   border: 0
@@ -61,19 +61,6 @@
   font-size: 14px
   color: rgba(154, 156, 203, 0.6)
 
-@media (min-width: 2754px)
-  .wrapper
-    position: relative
-    display: block
-
-  .info
-    position: absolute
-    top: 0
-
-  .suggestions
-    flex-direction: row
-
-
 @media (max-width: 1200px)
   .student
     margin-left: calc(0px - (1440px - 100%) / 2)
@@ -102,11 +89,14 @@
   .addition
     font-size: 16px
 
+  .input__area
+    padding: 0 0 0 32px
+
   .input__area::placeholder
-    font-size: 14px
+    font-size: 12px
 
   .suggestions_item
-    font-size: 12px
+    font-size: 11px
     padding: 5px 12px
 
   .suggestions
