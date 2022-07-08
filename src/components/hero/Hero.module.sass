@@ -1,0 +1,121 @@
+.wrapper
+  padding: 0 20px 20px
+  color: white
+  display: flex
+
+.student
+  margin-left: calc(0px - (100vw - 100%) / 2)
+
+.info
+  flex: 0 1 505px
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+
+.title
+  margin: 120px 0 24px
+  font-size: 56px
+
+.addition
+  color: rgba(234, 240, 246, 0.6)
+  margin: 0
+  font-size: 18px
+
+.input
+  margin: 50px 0
+  position: relative
+
+.input__area
+  padding: 0 0 0 32px
+  width: calc(100% - 35px)
+  height: 64px
+  border: 0
+  border-radius: 12px
+  background: #1F2143
+
+  &::placeholder
+    color: rgba(234, 240, 246, 0.6)
+    font-size: 16px
+
+.input__search
+  position: absolute
+  top: 10px
+  right: 14px
+  border-radius: 10px
+
+.suggestions
+  margin: 34px 0 0
+  display: flex
+  flex-direction: column
+  gap: 20px
+
+.suggestions__row
+  display: flex
+  gap: 20px
+
+.suggestions_item
+  padding: 8px 18px
+  text-align: center
+  border: 1px solid rgba(154, 156, 203, 0.6)
+  border-radius: 8px
+  font-size: 14px
+  color: rgba(154, 156, 203, 0.6)
+
+@media (min-width: 2754px)
+  .wrapper
+    position: relative
+    display: block
+
+  .info
+    position: absolute
+    top: 0
+
+  .suggestions
+    flex-direction: row
+
+
+@media (max-width: 1200px)
+  .student
+    margin-left: calc(0px - (1440px - 100%) / 2)
+
+  .info
+    flex: 0 1 505px
+
+@media (max-width: 900px)
+  .student
+    display: none
+
+  .info
+    flex: 1 1 505px
+
+  .title
+    margin-top: 40px
+
+  .input, .suggestions
+    margin: 40px 0
+
+@media (max-width: 540px)
+  .title
+    font-size: 35px
+    margin-top: 5px
+
+  .addition
+    font-size: 16px
+
+  .input__area::placeholder
+    font-size: 14px
+
+  .suggestions_item
+    font-size: 12px
+    padding: 5px 12px
+
+  .suggestions
+    gap: 12px
+    margin-top: 25px
+
+  .suggestions__row
+    gap: 12px
+
+
+
+
