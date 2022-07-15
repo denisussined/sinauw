@@ -2,6 +2,7 @@ import s from './App.module.sass';
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Featured from "./components/featured/Featured";
+import Mobile from "./components/mobile/Mobile";
 
 const App = () => {
     return (
@@ -10,7 +11,7 @@ const App = () => {
                 <Header />
                 <Hero />
                 <Featured />
-
+                <Mobile />
             </div>
         </div>
     )
