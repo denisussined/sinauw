@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Featured from "./components/featured/Featured";
 import Mobile from "./components/mobile/Mobile";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
                 <Hero />
                 <Featured />
                 <Mobile />
+                <Footer />
             </div>
         </div>
     )
