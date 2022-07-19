@@ -4,6 +4,7 @@ import Hero from "./components/hero/Hero";
 import Featured from "./components/featured/Featured";
 import Mobile from "./components/mobile/Mobile";
 import Footer from "./components/footer/Footer";
+import Pricing from "./components/pricing/Pricing";
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
                 <Header />
                 <Hero />
                 <Featured />
+                <Pricing/>
                 <Mobile />
                 <Footer />
             </div>

@@ -1,0 +1,122 @@
+.wrapper
+  padding: 85px 0 115px
+
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.title
+  text-align: center
+  font-size: 36px
+  color: #FFFFFF
+  padding-bottom: 20px
+
+.description
+  text-align: center
+  font-size: 18px
+  color: rgba(255, 255, 255, 0.4)
+  padding-bottom: 84px
+
+.container
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  gap: 40px
+
+.card
+  min-height: 515px
+  background: linear-gradient(180deg, #202246 -53.38%, rgba(40, 43, 87, 0.31) 100%)
+  border-radius: 20px
+  border: 3px #323465 solid
+  display: flex
+  flex-direction: column
+
+.card__header
+  padding: 40px 0 30px
+  margin: 0 36px
+  display: grid
+  grid-template: 1fr 1fr / 56px auto
+  color: #FFFFFF
+
+.card__icon
+  grid-row: 1 / 3
+
+.card__type
+  padding-left: 30px
+  margin: auto 0
+  font-size: 18px
+
+.card__price
+  padding-left: 30px
+  margin: auto 0
+  display: flex
+  align-items: end
+
+.card__number
+  font-size: 28px
+  font-weight: 700
+  line-height: 0.9em
+  color: #F5453D
+
+.card__currency
+  font-size: 14px
+  line-height: 1
+  padding-right: 3px
+  color: #F5453D
+  margin-bottom: auto
+
+.card__month
+  font-size: 11px
+  color: #FFFFFF
+  white-space: nowrap
+
+.card__list
+  padding: 30px 0 0
+  margin: 0 33px
+  border-top: 1.5px solid #272953
+  color: rgba(255, 255, 255, 0.8)
+  list-style-position: inside
+  list-style-image: url("../../images/pricing_list_dot.svg")
+  font-size: 14px
+  display: flex
+  flex-direction: column
+  gap: 16px
+
+.card__button
+  flex: 1 1 auto
+  display: flex
+  align-items: end
+
+.button
+  height: 50px
+  width: 294px
+  margin: 36px
+  border-radius: 6px
+  border: 1px solid #F5443B
+
+  &[id="free"]
+    background: unset
+    opacity: 0.5
+    color: #F5443B
+
+  &[id="express"]
+    background: unset
+    border-radius: 6px
+    color: #F5443B
+
+  &[id="premium"]
+    background: #F5443B
+    color: #FFFFFF
+
+
+@media (max-width: 1230px)
+  .wrapper
+    padding: 0 20px
+
+@media (max-width: 420px)
+  .button
+    width: 190px
+    margin: 36px auto
+
+  .card__list
+    font-size: 12px
