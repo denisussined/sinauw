@@ -4,8 +4,10 @@ import Hero from "./components/hero/Hero";
 import Featured from "./components/featured/Featured";
 import Mobile from "./components/mobile/Mobile";
 import Footer from "./components/footer/Footer";
+import Classes from "./components/classes/Classes";
 import Pricing from "./components/pricing/Pricing";
 import Webinar from "./components/webinar/Webinar";
+
 
 
 const App = () => {
@@ -15,6 +17,7 @@ const App = () => {
                 <Header />
                 <Hero />
                 <Featured />
+                <Classes />
                 <Pricing/>
                 <Webinar />
                 <Mobile />

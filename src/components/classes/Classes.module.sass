@@ -1,0 +1,117 @@
+@mixin textFormat ($padding, $font-size, $color: white, $margin: 0)
+  padding: $padding
+  font-size: $font-size
+  color: $color
+  margin: $margin
+
+.wrapper
+  display: grid
+
+.title
+  text-align: center
+  @include textFormat(60px 0 0, 36px, rgba(255, 255, 255, 0.8), 0 auto)
+
+.desc
+  text-align: center
+  @include textFormat(20px 0 0, 18px, rgba(255, 255, 255, 0.4), 0 auto)
+
+.container
+  padding: 84px 0 0
+
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(276px, auto))
+  justify-content: space-evenly
+  grid-gap: 32px
+
+.card__container
+  width: 270px
+  background: linear-gradient(180deg, #202246 -53.38%, rgba(40, 43, 87, 0.2) 100%)
+  border: 3px #323465 solid
+  border-radius: 20px
+  position: relative
+
+  display: flex
+  flex-direction: column
+
+  &.active
+    position: absolute
+
+.card__photo
+  margin: 10px
+  height: 170px
+  width: 250px
+  border-radius: 15px
+
+.card__type
+  @include textFormat(25px 12px 0, 12px, #3BF5BD)
+
+.card__title
+  @include textFormat(8px 12px 0, 18px, rgba(255, 255, 255, 0.8))
+
+.card__text
+  @include textFormat(12px 10px 20px, 14px, rgba(255, 255, 255, 0.4))
+
+.card__mentor
+  padding: 20px 0
+  margin: 0 12px
+  border-top: 1px solid #292B56
+
+  display: grid
+  grid-template-columns: 40px auto
+  grid-template-rows: 1fr 1fr
+
+  &:hover
+    cursor: pointer
+
+.card__avatar
+  width: 40px
+  border-radius: 50%
+  grid-row-start: 1
+  grid-row-end: 3
+
+.card__name
+  @include textFormat(0 0 0 15px, 14px, rgba(255, 255, 255, 0.8), auto 0)
+
+.card__rank
+  @include textFormat(0 0 0 15px, 12px, rgba(255, 255, 255, 0.4), auto 0)
+
+.showButton
+  @include textFormat(16px 32px, 16px, #F5443B, 120px auto 65px)
+  border-radius: 6px
+  border: 1px solid #F5443B
+  background-color: unset
+
+.card__button
+  @include textFormat(12px 32px, 14px, rgba(255, 255, 255, 0.8), 8px 54px 24px)
+  background: #F5443B
+  border: 0
+  border-radius: 6px
+  font-weight: 600
+
+@media (max-width: 1220px)
+  .wrapper
+    padding: 0 10px
+
+  .container
+    grid-template-columns: repeat(2, minmax(276px, auto))
+
+    & >:nth-child(3), & >:nth-child(4)
+      padding-top: 70px
+
+@media (max-width: 610px)
+  .container
+    padding: 40px 0 0
+    grid-template-columns:  minmax(276px, auto)
+
+    & >:nth-child(3), & >:nth-child(4)
+      padding-top: 0
+
+  .card__container.active
+    position: static
+
+  .container >:nth-child(3), .container >:nth-child(4)
+    padding-top: 0
+
+  .showButton
+    margin-top: 40px
+
