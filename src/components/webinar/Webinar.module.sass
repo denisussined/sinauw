@@ -1,0 +1,69 @@
+@mixin textFormat($size, $weight, $color, $opacity, $height)
+  font-size: $size
+  font-weight: $weight
+  color: $color
+  opacity: $opacity
+  line-height: $height
+
+.wrapper
+  height: 900px
+  font-size: 36px
+  overflow: hidden
+
+  display: flex
+  flex-direction: column
+
+  &>:nth-child(2)
+    position: relative
+    height: 100%
+    width: 100%
+
+.slide
+  border-radius: 23px
+
+.text
+  text-align: center
+  padding: 100px 0 0
+
+.title
+  @include textFormat(1em, 400, #FFFFFF, 0.8, 54px)
+
+.description
+  @include textFormat(0.5em, 400, #FFFFFF, 0.4, 27px)
+
+.redirect
+  @include textFormat(0.4em, 500, #D1D1D7, 1, 21px)
+  align-self: end
+  padding: 0 0 85px
+
+@media (max-width: 1220px)
+  .wrapper
+    padding: 0 10px
+
+@media (max-width: 900px)
+  .wrapper
+    height: 800px
+
+  .slide
+    height: 60%
+
+@media (max-width: 600px)
+  .wrapper
+    height: 700px
+    font-size: 30px
+
+  .redirect
+    padding: 0 0 35px
+
+@media (max-width: 450px)
+  .wrapper
+    height: 600px
+
+@media (max-width: 370px)
+  .wrapper
+    height: 450px
+
+
+
+
+
